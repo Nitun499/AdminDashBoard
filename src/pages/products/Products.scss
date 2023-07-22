@@ -1,0 +1,25 @@
+.products{
+   width: 90vw;
+   margin-top: -2rem;
+   padding: 1rem;
+   .info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+   
+    h1{
+
+    }
+    button{
+      padding: 0.8rem 1rem;
+      margin-right: 3rem;
+      border-radius: 10px;
+      font-weight: 600;
+      color: white;
+      background-color: inherit;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+   }
+}

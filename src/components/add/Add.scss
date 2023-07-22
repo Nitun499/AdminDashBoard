@@ -1,0 +1,66 @@
+
+@import '../../styles/variables.scss';
+.adduser{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: rgba(0,0,0,0.724);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modal{
+        padding: 50px;
+        border-radius: 10px;
+        background-color: $main-bg;
+        position: relative;
+        position: fixed;
+        top: 20%;
+        .close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 1.5rem;
+            padding-right: 1rem;
+            cursor: pointer;
+            
+        }
+        h1{
+            font-size: 1.5rem;
+           margin-bottom: 1rem;
+           color: $soft-color;
+        }
+        form{
+            display: flex;
+            max-width: 500px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .item{
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+               margin-bottom: 20px;
+               width: 40%;
+               label{
+                font-size: 14px;
+               }
+               input{
+                padding: 10px;
+                background-color: transparent;
+                color: white;
+                outline: none;
+                border: 1px solid $soft-color;
+                border-radius: 3px;
+               }
+            }
+            button{
+             font-size: 1.4rem;
+             padding: 10px;
+             width: 100%;
+             cursor: pointer;
+             border-radius: 10px;
+            }
+        }
+    }
+}

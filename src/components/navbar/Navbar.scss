@@ -1,0 +1,62 @@
+
+@import '../../styles//responsive.scss';
+
+.navbar{
+    width: 100%;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 0.8rem;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        .icon{
+            @include sm{
+                display: none;
+            }
+        }
+        .notifications{
+            position: relative;
+            img{
+              
+
+            }
+            span{
+                position: absolute;
+                background-color: red;
+                color: white;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                text-align: center;
+                top: -15px;
+                right: -10px;
+            }
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+             img{
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            span{
+                
+            }
+        }
+        img{
+
+        }
+    }
+}
